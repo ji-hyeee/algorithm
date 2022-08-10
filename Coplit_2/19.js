@@ -11,6 +11,7 @@ function decryptCaesarCipher(str, secret) {
             let resultStr = findStr - secret;
 
             (resultStr < 0) ? resultStr = alpha.length + resultStr : resultStr
+            // 26 + (-3)
 
             result = result + alpha[resultStr];
         }
